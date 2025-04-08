@@ -1,0 +1,5 @@
+curl -X POST ^
+  -H "Authorization: <API Token>" ^
+  -H "Content-Type: application/json" ^
+  -d "{\"request\":[{\"md5\":\"27b4b0268101fd2836d69ba3c2ada280\",\"file_type\":\"docx\",\"features\":[\"te\",\"extraction\"],\"file_name\":\"Step by step guide using vmkfstools in the CLI.docx\",\"te\":{\"reports\":[\"xml\",\"summary\"]},\"extraction\":{\"method\":\"pdf\"}}]}" ^
+  "https://te-api.checkpoint.com/tecloud/api/v1/file/query"
