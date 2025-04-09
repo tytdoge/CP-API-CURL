@@ -1,3 +1,29 @@
+## API Examples
+
+Below are example API calls using **curl** in both Windows CMD and Bash environments.
+
+### Windows CMD Example
+
+```bash
+curl -X POST ^
+  -H "Authorization: <API Token>" ^
+  -H "Content-Type: application/json" ^
+  -d "{\"request\":[{\"md5\":\"27b4b0268101fd2836d69ba3c2ada280\",\"file_type\":\"docx\",\"features\":[\"te\",\"extraction\"],\"file_name\":\"Step by step guide using vmkfstools in the CLI.docx\",\"te\":{\"reports\":[\"xml\",\"summary\"]},\"extraction\":{\"method\":\"pdf\"}}]}" ^
+  "https://te-api.checkpoint.com/tecloud/api/v1/file/query"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Check Point Threat Prevention API Shell Script
 
 This repository contains a shell script that implements basic operations for interacting with the Check Point Threat Prevention (TE) API. The script supports querying a file, uploading a file for analysis, downloading reports (placeholder), and checking your API quota. The implementation is based on the work of Martin K and has been updated and modified by Bill N.
